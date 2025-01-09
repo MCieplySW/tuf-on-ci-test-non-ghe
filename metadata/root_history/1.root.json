@@ -1,0 +1,66 @@
+{
+ "signatures": [
+  {
+   "keyid": "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c",
+   "sig": ""
+  }
+ ],
+ "signed": {
+  "_type": "root",
+  "consistent_snapshot": true,
+  "expires": "2026-01-09T14:46:07Z",
+  "keys": {
+   "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c": {
+    "keytype": "ecdsa",
+    "keyval": {
+     "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAElBCrLmuegWABPI8CwFWqxIXhq2eM\n6PrEU+vXopg6HW9xjnhblATNHcum+sN18/5tvTX/eYCiWsJLPX9mnzkHyQ==\n-----END PUBLIC KEY-----\n"
+    },
+    "scheme": "ecdsa-sha2-nistp256",
+    "x-tuf-on-ci-keyowner": "@mcieplysw"
+   },
+   "6f360b72a11bca146b708811cd5843a6dca388da72353f6d1e58c6850024fc73": {
+    "keytype": "sigstore-oidc",
+    "keyval": {
+     "identity": "https://github.com/MCieplySW/tuf-on-ci-test-non-ghe/.github/workflows/online-sign.yml@refs/heads/main",
+     "issuer": "https://token.actions.githubusercontent.com"
+    },
+    "scheme": "Fulcio",
+    "x-tuf-on-ci-online-uri": "sigstore:"
+   }
+  },
+  "roles": {
+   "root": {
+    "keyids": [
+     "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c"
+    ],
+    "threshold": 1
+   },
+   "snapshot": {
+    "keyids": [
+     "6f360b72a11bca146b708811cd5843a6dca388da72353f6d1e58c6850024fc73"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 365,
+    "x-tuf-on-ci-signing-period": 60
+   },
+   "targets": {
+    "keyids": [
+     "447cd784506ed6cf7db1b2a277c594a8371532e176306e99e95f4cd259714f8c"
+    ],
+    "threshold": 1
+   },
+   "timestamp": {
+    "keyids": [
+     "6f360b72a11bca146b708811cd5843a6dca388da72353f6d1e58c6850024fc73"
+    ],
+    "threshold": 1,
+    "x-tuf-on-ci-expiry-period": 2,
+    "x-tuf-on-ci-signing-period": 1
+   }
+  },
+  "spec_version": "1.0.31",
+  "version": 1,
+  "x-tuf-on-ci-expiry-period": 365,
+  "x-tuf-on-ci-signing-period": 60
+ }
+}
