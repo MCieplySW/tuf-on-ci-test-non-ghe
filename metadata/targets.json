@@ -7,7 +7,36 @@
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2026-01-09T14:58:22Z",
+  "delegations": {
+   "keys": {
+    "6f360b72a11bca146b708811cd5843a6dca388da72353f6d1e58c6850024fc73": {
+     "keytype": "sigstore-oidc",
+     "keyval": {
+      "identity": "https://github.com/MCieplySW/tuf-on-ci-test-non-ghe/.github/workflows/online-sign.yml@refs/heads/main",
+      "issuer": "https://token.actions.githubusercontent.com"
+     },
+     "scheme": "Fulcio",
+     "x-tuf-on-ci-online-uri": "sigstore:"
+    }
+   },
+   "roles": [
+    {
+     "keyids": [
+      "6f360b72a11bca146b708811cd5843a6dca388da72353f6d1e58c6850024fc73"
+     ],
+     "name": "dev",
+     "paths": [
+      "dev/*",
+      "dev/*/*",
+      "dev/*/*/*",
+      "dev/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
+    }
+   ]
+  },
+  "expires": "2026-01-15T10:59:53Z",
   "spec_version": "1.0.31",
   "targets": {
    "file1.txtv": {
@@ -17,7 +46,7 @@
     "length": 9
    }
   },
-  "version": 2,
+  "version": 3,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
